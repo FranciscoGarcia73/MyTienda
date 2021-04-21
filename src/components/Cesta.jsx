@@ -1,12 +1,11 @@
-import { FlexDiv, Card } from "./UI/basic";
-import { useEffect, useState } from "react";
 import "./Styles/Cesta.css";
 
 function Cesta({ productos }) {
-  const [precioT, setPrecioT] = useState(0);
-
   let arrPrecios = productos.map((producto) => producto.price);
   console.log(arrPrecios);
+
+  const nArticulos = productos.length;
+  console.log(nArticulos);
 
   let suma = 0;
   for (let precio of arrPrecios) {
@@ -15,7 +14,14 @@ function Cesta({ productos }) {
   console.log(suma);
   return (
     <div className="productos">
-      <h6>Articulos Comprados</h6>
+      <h6>
+        Articulos Comprados{" "}
+        <div>
+          <i class="fas fa-shopping-cart"></i>
+          <spam>{nArticulos}</spam>
+        </div>
+      </h6>
+      <hr />
       {productos.map((producto) => {
         return (
           <div>
