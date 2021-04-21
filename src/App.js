@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Productos from './components/Productos';
+import Cesta from './components/Cesta';
 
 function App() {
+
+  const [productosAComprar, setProductosAComprar] = useState([]);
+  
+  const onProductoCreado = (productoNuevo) => {
+    setProductosAComprar([...productosAComprar, productoNuevo]);
+  }
+  console.log(productosAComprar);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container d-flex">
+        <div className="col-9 mt-5 d-flex">
+          <Productos productoCreado={onProductoCreado}/>
+        </div>
+        <div className="col-3 mt-5">
+          <Cesta productos={productosAComprar} />
+          </div>
+        </div>
     </div>
   );
 }

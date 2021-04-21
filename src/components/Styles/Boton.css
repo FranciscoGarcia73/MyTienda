@@ -1,0 +1,22 @@
+.Boton {
+    background: #cad2c5;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    min-width: 24%;
+    margin: 0 auto;
+}
+
+.Boton[data-value="null"] {
+    pointer-events: none;
+}
+
+.Boton:hover {
+    background: #d7ddd3;
+    cursor: default;
+}
