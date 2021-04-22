@@ -10,7 +10,6 @@ function App() {
   const onProductoCreado = (productoNuevo) => {
     setProductosAComprar([...productosAComprar, productoNuevo]);
   }
-  console.log(productosAComprar);
   
   return (
     <div className="App">

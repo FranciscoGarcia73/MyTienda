@@ -1,5 +1,5 @@
 .Boton {
-    background: #cad2c5;
+    background: black;
     display: flex;
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     justify-content: center;
     width: 20px;
     font-size: 10px;
-    color: rgba(0, 0, 0, 0.5);
+    color:white;
     min-width: 24%;
     margin: 0 auto;
 }
@@ -17,6 +17,8 @@
 }
 
 .Boton:hover {
-    background: #d7ddd3;
-    cursor: default;
+    background:white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
 }

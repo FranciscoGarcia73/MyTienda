@@ -1,24 +1,18 @@
 import "./Styles/Cesta.css";
 
 function Cesta({ productos }) {
-  let arrPrecios = productos.map((producto) => producto.price);
-  console.log(arrPrecios);
+  let suma = 0;
+  productos.map((producto) => (suma += producto.price));
 
   const nArticulos = productos.length;
-  console.log(nArticulos);
 
-  let suma = 0;
-  for (let precio of arrPrecios) {
-    suma = suma + precio;
-  }
-  console.log(suma);
   return (
     <div className="productos">
       <h6>
         Articulos Comprados{" "}
         <div>
           <i class="fas fa-shopping-cart"></i>
-          <spam>{nArticulos}</spam>
+          <span>{nArticulos}</span>
         </div>
       </h6>
       <hr />

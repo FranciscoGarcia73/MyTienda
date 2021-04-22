@@ -1,6 +1,6 @@
 import { articulos } from "./Data/articulos";
 import styled from "styled-components";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { FlexDiv, Card } from "./UI/basic";
 import "./Styles/Productos.css";

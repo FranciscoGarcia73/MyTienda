@@ -3,7 +3,7 @@
     position: fixed;
     top: 54px;
     padding: 5px;
-    width: 340px;
+    width: 374px;
     text-align: left;
 
 }
@@ -14,20 +14,20 @@
     text-align: center;
 }
 .articulos{
-    font-size: 59%;
+    font-size: 64%;
 }
 .precio{
     position:relative;
     padding-top: 2px;
     width:98%;
 }
-spam {
+span{
     background-color: black;
     color: white;
     margin-left: 4px;
     border: solid 1px black;
-    border-radius: 25%;
+    border-radius: 35%;
     padding: 2px 10px 2px 10px;
     text-align: center;
-    font-size: 60%;
+    font-size: 66%;
 }
