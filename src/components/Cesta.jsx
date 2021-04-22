@@ -33,6 +33,7 @@ function Cesta({ productos }) {
         );
       })}
       <p className="precio">
+        <hr />
         <strong>Importe total {suma} €</strong>
       </p>
     </div>
