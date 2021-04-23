@@ -13,4 +13,5 @@ export const Card = styled.div`
   margin: 5px;
   width: 200px;
   height: 306px;
+  position: relative;
 `;
